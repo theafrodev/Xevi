@@ -1,8 +1,16 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'media', // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        background: '#FFFDF5',
+        dark: '#222222',
+      },
+      maxWidth:{
+        'card': '500px',
+      }
+    },
   },
   variants: {
     extend: {},
